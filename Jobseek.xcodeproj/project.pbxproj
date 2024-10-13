@@ -14,19 +14,10 @@
 		4AA394812CBBF03B00D86FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394802CBBF03B00D86FB3 /* Assets.xcassets */; };
 		4AA394842CBBF03B00D86FB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394832CBBF03B00D86FB3 /* Base */; };
 		4AA3948F2CBBF03B00D86FB3 /* JobseekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */; };
-		4AA394992CBBF03B00D86FB3 /* JobseekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394982CBBF03B00D86FB3 /* JobseekUITests.swift */; };
-		4AA3949B2CBBF03B00D86FB3 /* JobseekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3949A2CBBF03B00D86FB3 /* JobseekUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4AA3948B2CBBF03B00D86FB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AA3946C2CBBF03700D86FB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AA394732CBBF03700D86FB3;
-			remoteInfo = Jobseek;
-		};
-		4AA394952CBBF03B00D86FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4AA3946C2CBBF03700D86FB3 /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		4AA394852CBBF03B00D86FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA3948A2CBBF03B00D86FB3 /* JobseekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobseekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobseekTests.swift; sourceTree = "<group>"; };
-		4AA394942CBBF03B00D86FB3 /* JobseekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobseekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA394982CBBF03B00D86FB3 /* JobseekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobseekUITests.swift; sourceTree = "<group>"; };
-		4AA3949A2CBBF03B00D86FB3 /* JobseekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobseekUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AA394912CBBF03B00D86FB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				4AA394762CBBF03700D86FB3 /* Jobseek */,
 				4AA3948D2CBBF03B00D86FB3 /* JobseekTests */,
-				4AA394972CBBF03B00D86FB3 /* JobseekUITests */,
 				4AA394752CBBF03700D86FB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				4AA394742CBBF03700D86FB3 /* Jobseek.app */,
 				4AA3948A2CBBF03B00D86FB3 /* JobseekTests.xctest */,
-				4AA394942CBBF03B00D86FB3 /* JobseekUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */,
 			);
 			path = JobseekTests;
-			sourceTree = "<group>";
-		};
-		4AA394972CBBF03B00D86FB3 /* JobseekUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4AA394982CBBF03B00D86FB3 /* JobseekUITests.swift */,
-				4AA3949A2CBBF03B00D86FB3 /* JobseekUITestsLaunchTests.swift */,
-			);
-			path = JobseekUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 4AA3948A2CBBF03B00D86FB3 /* JobseekTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4AA394932CBBF03B00D86FB3 /* JobseekUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AA394A42CBBF03B00D86FB3 /* Build configuration list for PBXNativeTarget "JobseekUITests" */;
-			buildPhases = (
-				4AA394902CBBF03B00D86FB3 /* Sources */,
-				4AA394912CBBF03B00D86FB3 /* Frameworks */,
-				4AA394922CBBF03B00D86FB3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4AA394962CBBF03B00D86FB3 /* PBXTargetDependency */,
-			);
-			name = JobseekUITests;
-			productName = JobseekUITests;
-			productReference = 4AA394942CBBF03B00D86FB3 /* JobseekUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					4AA394892CBBF03B00D86FB3 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 4AA394732CBBF03700D86FB3;
-					};
-					4AA394932CBBF03B00D86FB3 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 4AA394732CBBF03700D86FB3;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				4AA394732CBBF03700D86FB3 /* Jobseek */,
 				4AA394892CBBF03B00D86FB3 /* JobseekTests */,
-				4AA394932CBBF03B00D86FB3 /* JobseekUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4AA394882CBBF03B00D86FB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA394922CBBF03B00D86FB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AA394902CBBF03B00D86FB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AA3949B2CBBF03B00D86FB3 /* JobseekUITestsLaunchTests.swift in Sources */,
-				4AA394992CBBF03B00D86FB3 /* JobseekUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 4AA394732CBBF03700D86FB3 /* Jobseek */;
 			targetProxy = 4AA3948B2CBBF03B00D86FB3 /* PBXContainerItemProxy */;
-		};
-		4AA394962CBBF03B00D86FB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AA394732CBBF03700D86FB3 /* Jobseek */;
-			targetProxy = 4AA394952CBBF03B00D86FB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -368,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -448,8 +374,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +383,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.jobstreet.Jobseek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,8 +406,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +415,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.jobstreet.Jobseek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -531,42 +465,6 @@
 			};
 			name = Release;
 		};
-		4AA394A52CBBF03B00D86FB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5UACY4V6X4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.jobstreet.JobseekUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Jobseek;
-			};
-			name = Debug;
-		};
-		4AA394A62CBBF03B00D86FB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5UACY4V6X4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.jobstreet.JobseekUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Jobseek;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,15 +491,6 @@
 			buildConfigurations = (
 				4AA394A22CBBF03B00D86FB3 /* Debug */,
 				4AA394A32CBBF03B00D86FB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AA394A42CBBF03B00D86FB3 /* Build configuration list for PBXNativeTarget "JobseekUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AA394A52CBBF03B00D86FB3 /* Debug */,
-				4AA394A62CBBF03B00D86FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
