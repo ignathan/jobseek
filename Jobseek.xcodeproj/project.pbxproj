@@ -14,6 +14,7 @@
 		4AA394812CBBF03B00D86FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394802CBBF03B00D86FB3 /* Assets.xcassets */; };
 		4AA394842CBBF03B00D86FB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394832CBBF03B00D86FB3 /* Base */; };
 		4AA3948F2CBBF03B00D86FB3 /* JobseekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */; };
+		4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		4AA394852CBBF03B00D86FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA3948A2CBBF03B00D86FB3 /* JobseekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobseekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobseekTests.swift; sourceTree = "<group>"; };
+		4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		4AA394762CBBF03700D86FB3 /* Jobseek */ = {
 			isa = PBXGroup;
 			children = (
+				4AA394A82CBBF2E600D86FB3 /* Shared */,
 				4AA394772CBBF03700D86FB3 /* AppDelegate.swift */,
 				4AA394792CBBF03700D86FB3 /* SceneDelegate.swift */,
 				4AA3947B2CBBF03700D86FB3 /* ViewController.swift */,
@@ -95,6 +98,14 @@
 				4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */,
 			);
 			path = JobseekTests;
+			sourceTree = "<group>";
+		};
+		4AA394A82CBBF2E600D86FB3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			files = (
 				4AA3947C2CBBF03700D86FB3 /* ViewController.swift in Sources */,
 				4AA394782CBBF03700D86FB3 /* AppDelegate.swift in Sources */,
+				4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */,
 				4AA3947A2CBBF03700D86FB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
