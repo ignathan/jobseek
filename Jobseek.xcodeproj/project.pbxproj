@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		4AA394782CBBF03700D86FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394772CBBF03700D86FB3 /* AppDelegate.swift */; };
 		4AA3947A2CBBF03700D86FB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394792CBBF03700D86FB3 /* SceneDelegate.swift */; };
-		4AA3947C2CBBF03700D86FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3947B2CBBF03700D86FB3 /* ViewController.swift */; };
-		4AA3947F2CBBF03800D86FB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AA3947E2CBBF03800D86FB3 /* Base */; };
 		4AA394812CBBF03B00D86FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394802CBBF03B00D86FB3 /* Assets.xcassets */; };
 		4AA394842CBBF03B00D86FB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394832CBBF03B00D86FB3 /* Base */; };
-		4AA3948F2CBBF03B00D86FB3 /* JobseekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */; };
 		4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */; };
+		4AA394AD2CBBF4AE00D86FB3 /* MasterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394AC2CBBF4AE00D86FB3 /* MasterCoordinator.swift */; };
+		4AA394B12CBBF4CF00D86FB3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394B02CBBF4CF00D86FB3 /* LoginView.swift */; };
+		4AA394B32CBBF4E100D86FB3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394B22CBBF4E100D86FB3 /* String+Extension.swift */; };
+		4AA394B52CBBF50300D86FB3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA394B42CBBF50300D86FB3 /* Localizable.xcstrings */; };
+		4AA394B72CBBF5BE00D86FB3 /* JSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394B62CBBF5BE00D86FB3 /* JSTextField.swift */; };
+		4AA394B92CBBF5D000D86FB3 /* JSSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394B82CBBF5D000D86FB3 /* JSSecondaryButton.swift */; };
+		4AA394BB2CBBF5EA00D86FB3 /* JSPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394BA2CBBF5EA00D86FB3 /* JSPrimaryButton.swift */; };
+		4AA394BD2CBBF60C00D86FB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394BC2CBBF60C00D86FB3 /* LoginViewController.swift */; };
+		4AA394C22CBC0DE700D86FB3 /* MockMasterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394C12CBC0DE700D86FB3 /* MockMasterCoordinator.swift */; };
+		4AA394C52CBC0E0B00D86FB3 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394C42CBC0E0B00D86FB3 /* SceneDelegateTests.swift */; };
+		4AA394C72CBC0E2200D86FB3 /* MasterCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394C62CBC0E2200D86FB3 /* MasterCoordinatorTests.swift */; };
+		4AA394C92CBC10C500D86FB3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394C82CBC10C500D86FB3 /* LoginViewModel.swift */; };
+		4AA394CE2CBC1BC900D86FB3 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */; };
+		4AA394D12CBC1D3F00D86FB3 /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */; };
+		4AA394D32CBC1DA900D86FB3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +43,26 @@
 		4AA394742CBBF03700D86FB3 /* Jobseek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobseek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA394772CBBF03700D86FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA394792CBBF03700D86FB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4AA3947B2CBBF03700D86FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AA3947E2CBBF03800D86FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AA394802CBBF03B00D86FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA394832CBBF03B00D86FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA394852CBBF03B00D86FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA3948A2CBBF03B00D86FB3 /* JobseekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobseekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobseekTests.swift; sourceTree = "<group>"; };
 		4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		4AA394AC2CBBF4AE00D86FB3 /* MasterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCoordinator.swift; sourceTree = "<group>"; };
+		4AA394B02CBBF4CF00D86FB3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4AA394B22CBBF4E100D86FB3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4AA394B42CBBF50300D86FB3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		4AA394B62CBBF5BE00D86FB3 /* JSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTextField.swift; sourceTree = "<group>"; };
+		4AA394B82CBBF5D000D86FB3 /* JSSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSSecondaryButton.swift; sourceTree = "<group>"; };
+		4AA394BA2CBBF5EA00D86FB3 /* JSPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPrimaryButton.swift; sourceTree = "<group>"; };
+		4AA394BC2CBBF60C00D86FB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4AA394C12CBC0DE700D86FB3 /* MockMasterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMasterCoordinator.swift; sourceTree = "<group>"; };
+		4AA394C42CBC0E0B00D86FB3 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
+		4AA394C62CBC0E2200D86FB3 /* MasterCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCoordinatorTests.swift; sourceTree = "<group>"; };
+		4AA394C82CBC10C500D86FB3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
+		4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +104,15 @@
 		4AA394762CBBF03700D86FB3 /* Jobseek */ = {
 			isa = PBXGroup;
 			children = (
+				4AA394AE2CBBF4C100D86FB3 /* Scenes */,
+				4AA394AB2CBBF4A200D86FB3 /* Coordinator */,
 				4AA394A82CBBF2E600D86FB3 /* Shared */,
 				4AA394772CBBF03700D86FB3 /* AppDelegate.swift */,
 				4AA394792CBBF03700D86FB3 /* SceneDelegate.swift */,
-				4AA3947B2CBBF03700D86FB3 /* ViewController.swift */,
-				4AA3947D2CBBF03800D86FB3 /* Main.storyboard */,
 				4AA394802CBBF03B00D86FB3 /* Assets.xcassets */,
 				4AA394822CBBF03B00D86FB3 /* LaunchScreen.storyboard */,
 				4AA394852CBBF03B00D86FB3 /* Info.plist */,
+				4AA394B42CBBF50300D86FB3 /* Localizable.xcstrings */,
 			);
 			path = Jobseek;
 			sourceTree = "<group>";
@@ -95,7 +120,10 @@
 		4AA3948D2CBBF03B00D86FB3 /* JobseekTests */ = {
 			isa = PBXGroup;
 			children = (
-				4AA3948E2CBBF03B00D86FB3 /* JobseekTests.swift */,
+				4AA394C02CBC0DC200D86FB3 /* Mocks */,
+				4AA394CA2CBC1B8F00D86FB3 /* Coordinator */,
+				4AA394CB2CBC1BA800D86FB3 /* Scenes */,
+				4AA394C42CBC0E0B00D86FB3 /* SceneDelegateTests.swift */,
 			);
 			path = JobseekTests;
 			sourceTree = "<group>";
@@ -104,8 +132,80 @@
 			isa = PBXGroup;
 			children = (
 				4AA394A92CBBF2FC00D86FB3 /* UIFont+Extension.swift */,
+				4AA394B22CBBF4E100D86FB3 /* String+Extension.swift */,
+				4AA394B62CBBF5BE00D86FB3 /* JSTextField.swift */,
+				4AA394BA2CBBF5EA00D86FB3 /* JSPrimaryButton.swift */,
+				4AA394B82CBBF5D000D86FB3 /* JSSecondaryButton.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		4AA394AB2CBBF4A200D86FB3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394AC2CBBF4AE00D86FB3 /* MasterCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4AA394AE2CBBF4C100D86FB3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394AF2CBBF4C800D86FB3 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4AA394AF2CBBF4C800D86FB3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394B02CBBF4CF00D86FB3 /* LoginView.swift */,
+				4AA394BC2CBBF60C00D86FB3 /* LoginViewController.swift */,
+				4AA394C82CBC10C500D86FB3 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4AA394C02CBC0DC200D86FB3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394CF2CBC1D3500D86FB3 /* Scenes */,
+				4AA394C32CBC0DFC00D86FB3 /* Coordinator */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4AA394C32CBC0DFC00D86FB3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394C12CBC0DE700D86FB3 /* MockMasterCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4AA394CA2CBC1B8F00D86FB3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394C62CBC0E2200D86FB3 /* MasterCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4AA394CB2CBC1BA800D86FB3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */,
+				4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4AA394CF2CBC1D3500D86FB3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +261,7 @@
 					};
 					4AA394892CBBF03B00D86FB3 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 4AA394732CBBF03700D86FB3;
 					};
 				};
@@ -191,7 +292,7 @@
 			files = (
 				4AA394812CBBF03B00D86FB3 /* Assets.xcassets in Resources */,
 				4AA394842CBBF03B00D86FB3 /* Base in Resources */,
-				4AA3947F2CBBF03800D86FB3 /* Base in Resources */,
+				4AA394B52CBBF50300D86FB3 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA3947C2CBBF03700D86FB3 /* ViewController.swift in Sources */,
+				4AA394B72CBBF5BE00D86FB3 /* JSTextField.swift in Sources */,
+				4AA394BB2CBBF5EA00D86FB3 /* JSPrimaryButton.swift in Sources */,
+				4AA394C92CBC10C500D86FB3 /* LoginViewModel.swift in Sources */,
 				4AA394782CBBF03700D86FB3 /* AppDelegate.swift in Sources */,
 				4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */,
+				4AA394B92CBBF5D000D86FB3 /* JSSecondaryButton.swift in Sources */,
+				4AA394AD2CBBF4AE00D86FB3 /* MasterCoordinator.swift in Sources */,
+				4AA394B12CBBF4CF00D86FB3 /* LoginView.swift in Sources */,
+				4AA394B32CBBF4E100D86FB3 /* String+Extension.swift in Sources */,
+				4AA394BD2CBBF60C00D86FB3 /* LoginViewController.swift in Sources */,
 				4AA3947A2CBBF03700D86FB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +328,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA3948F2CBBF03B00D86FB3 /* JobseekTests.swift in Sources */,
+				4AA394D32CBC1DA900D86FB3 /* LoginViewControllerTests.swift in Sources */,
+				4AA394CE2CBC1BC900D86FB3 /* LoginViewModelTests.swift in Sources */,
+				4AA394C22CBC0DE700D86FB3 /* MockMasterCoordinator.swift in Sources */,
+				4AA394C52CBC0E0B00D86FB3 /* SceneDelegateTests.swift in Sources */,
+				4AA394C72CBC0E2200D86FB3 /* MasterCoordinatorTests.swift in Sources */,
+				4AA394D12CBC1D3F00D86FB3 /* MockLoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AA3947D2CBBF03800D86FB3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AA3947E2CBBF03800D86FB3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4AA394822CBBF03B00D86FB3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,7 +490,6 @@
 				INFOPLIST_FILE = Jobseek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,7 +521,6 @@
 				INFOPLIST_FILE = Jobseek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,6 +545,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5UACY4V6X4;
@@ -451,6 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.jobstreet.JobseekTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobseek.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jobseek";
@@ -462,6 +567,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5UACY4V6X4;
