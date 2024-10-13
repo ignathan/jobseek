@@ -25,4 +25,46 @@ final class MasterCoordinatorTests: XCTestCase {
         
         XCTAssertTrue(sut.navigationController.viewControllers.contains(where: { $0 is LoginViewController }))
     }
+    
+    func testMasterControllers() {
+        // Given
+        let navigationController = UINavigationController()
+        
+        let sut = MasterCoordinatorImpl(navigationController: navigationController)
+        
+        // When
+        let controllers = sut.masterControllers()
+        
+        // Then
+        XCTAssertTrue(controllers.contains(where: { $0 is ProfileViewController }))
+    }
+    
+    func testPushMaster() {
+        // Given
+        let navigationController = UINavigationController()
+        
+        let sut = MasterCoordinatorImpl(navigationController: navigationController)
+        
+        // When
+        sut.pushMaster()
+        
+        // Then
+        XCTAssertTrue(sut.navigationController.viewControllers.contains(where: { $0 is MasterViewController }))
+    }
+    
+    func testRestart() {
+        // Given
+        let navigationController = UINavigationController()
+        
+        let sut = MasterCoordinatorImpl(navigationController: navigationController)
+        
+        // When
+        sut.restart()
+        
+        // Then
+        XCTAssertTrue(sut.navigationController.viewControllers.count == 1)
+        
+        
+        XCTAssertTrue(sut.navigationController.viewControllers.contains(where: { $0 is LoginViewController }))
+    }
 }

@@ -11,7 +11,12 @@ protocol LoginViewModel {
     
     var usernameSubject: CurrentValueSubject<String?, Never> { get }
     var passwordSubject: CurrentValueSubject<String?, Never> { get }
+    
     var loginEnabledSubject: CurrentValueSubject<Bool, Never> { get }
+    
+    var loginSubject: PassthroughSubject<Void, Error> { get }
+    
+    func login()
 }
 
 class LoginViewModelImpl: LoginViewModel {
@@ -21,6 +26,8 @@ class LoginViewModelImpl: LoginViewModel {
     let passwordSubject = CurrentValueSubject<String?, Never>("")
     
     let loginEnabledSubject = CurrentValueSubject<Bool, Never>(false)
+    
+    let loginSubject = PassthroughSubject<Void, any Error>()
     
     var cancellables = Set<AnyCancellable>()
     
@@ -44,5 +51,12 @@ class LoginViewModelImpl: LoginViewModel {
     func isLoginEnabled(username: String?, password: String?) -> Bool {
         
         return !username.isEmptyOrNil && !password.isEmptyOrNil
+    }
+    
+    func login() {
+        
+        // TODO: call login API & stores JWT token in Keychain
+        
+        loginSubject.send()
     }
 }

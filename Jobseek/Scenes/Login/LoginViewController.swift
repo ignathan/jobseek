@@ -48,10 +48,28 @@ class LoginViewController: UIViewController {
         
         rootView.passwordField.addTarget(self, action: #selector(didEditPassword), for: .editingChanged)
         
+        rootView.loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
+        
         viewModel.loginEnabledSubject
             .sink { [weak self] isEnabled in
                 
                 self?.rootView.loginButton.isEnabled = isEnabled
+                
+            }.store(in: &cancellables)
+        
+        viewModel.loginSubject
+            .sink { [weak self] completion in
+                
+                guard self != nil, case let .failure(error) = completion else { return }
+                
+#if DEBUG
+                print("😭 Login Error")
+                dump(error)
+#endif
+                
+            } receiveValue: { [weak self] in
+                
+                self?.coordinator.pushMaster()
                 
             }.store(in: &cancellables)
     }
@@ -64,6 +82,11 @@ class LoginViewController: UIViewController {
     @objc func didEditPassword() {
         
         viewModel.passwordSubject.send(rootView.passwordField.text)
+    }
+    
+    @objc func didTapLogin() {
+        
+        viewModel.login()
     }
 }
 

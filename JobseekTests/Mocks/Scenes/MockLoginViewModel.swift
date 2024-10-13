@@ -10,9 +10,17 @@ import Combine
 
 class MockLoginViewModel: LoginViewModel {
     
+    var loginCalled = false
+    
     let usernameSubject = CurrentValueSubject<String?, Never>(nil)
     
     let passwordSubject = CurrentValueSubject<String?, Never>(nil)
     
     let loginEnabledSubject = CurrentValueSubject<Bool, Never>(false)
+    
+    let loginSubject = PassthroughSubject<Void, any Error>()
+    
+    func login() {
+        loginCalled = true
+    }
 }

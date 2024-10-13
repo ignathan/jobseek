@@ -27,6 +27,13 @@
 		4AA394CE2CBC1BC900D86FB3 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */; };
 		4AA394D12CBC1D3F00D86FB3 /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */; };
 		4AA394D32CBC1DA900D86FB3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */; };
+		4AA394DD2CBC230700D86FB3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394DC2CBC230700D86FB3 /* ProfileView.swift */; };
+		4AA394DF2CBC23AE00D86FB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394DE2CBC23AE00D86FB3 /* ProfileViewController.swift */; };
+		4AA394E12CBC240D00D86FB3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394E02CBC240D00D86FB3 /* ProfileViewModel.swift */; };
+		4AA394E42CBC25CD00D86FB3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394E32CBC25CD00D86FB3 /* MasterViewController.swift */; };
+		4AA394ED2CBC34E700D86FB3 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394EC2CBC34E700D86FB3 /* ProfileViewModelTests.swift */; };
+		4AA394F12CBC359100D86FB3 /* ProfileViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394F02CBC359100D86FB3 /* ProfileViewControllerTests.swift */; };
+		4AA394F32CBC36CF00D86FB3 /* MockProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA394F22CBC36CF00D86FB3 /* MockProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
 		4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		4AA394DC2CBC230700D86FB3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4AA394DE2CBC23AE00D86FB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4AA394E02CBC240D00D86FB3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4AA394E32CBC25CD00D86FB3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4AA394EC2CBC34E700D86FB3 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
+		4AA394F02CBC359100D86FB3 /* ProfileViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTests.swift; sourceTree = "<group>"; };
+		4AA394F22CBC36CF00D86FB3 /* MockProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +165,9 @@
 		4AA394AE2CBBF4C100D86FB3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4AA394DB2CBC22E100D86FB3 /* Profile */,
 				4AA394AF2CBBF4C800D86FB3 /* Login */,
+				4AA394E32CBC25CD00D86FB3 /* MasterViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -194,8 +210,8 @@
 		4AA394CB2CBC1BA800D86FB3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */,
-				4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */,
+				4AA394E72CBC2F7700D86FB3 /* Profile */,
+				4AA394E62CBC2F6F00D86FB3 /* Login */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,8 +220,37 @@
 			isa = PBXGroup;
 			children = (
 				4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */,
+				4AA394F22CBC36CF00D86FB3 /* MockProfileViewModel.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4AA394DB2CBC22E100D86FB3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394DC2CBC230700D86FB3 /* ProfileView.swift */,
+				4AA394DE2CBC23AE00D86FB3 /* ProfileViewController.swift */,
+				4AA394E02CBC240D00D86FB3 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4AA394E62CBC2F6F00D86FB3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394CD2CBC1BC900D86FB3 /* LoginViewModelTests.swift */,
+				4AA394D22CBC1DA900D86FB3 /* LoginViewControllerTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4AA394E72CBC2F7700D86FB3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4AA394EC2CBC34E700D86FB3 /* ProfileViewModelTests.swift */,
+				4AA394F02CBC359100D86FB3 /* ProfileViewControllerTests.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +359,15 @@
 				4AA394BB2CBBF5EA00D86FB3 /* JSPrimaryButton.swift in Sources */,
 				4AA394C92CBC10C500D86FB3 /* LoginViewModel.swift in Sources */,
 				4AA394782CBBF03700D86FB3 /* AppDelegate.swift in Sources */,
+				4AA394DD2CBC230700D86FB3 /* ProfileView.swift in Sources */,
+				4AA394E42CBC25CD00D86FB3 /* MasterViewController.swift in Sources */,
 				4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */,
+				4AA394E12CBC240D00D86FB3 /* ProfileViewModel.swift in Sources */,
 				4AA394B92CBBF5D000D86FB3 /* JSSecondaryButton.swift in Sources */,
 				4AA394AD2CBBF4AE00D86FB3 /* MasterCoordinator.swift in Sources */,
 				4AA394B12CBBF4CF00D86FB3 /* LoginView.swift in Sources */,
 				4AA394B32CBBF4E100D86FB3 /* String+Extension.swift in Sources */,
+				4AA394DF2CBC23AE00D86FB3 /* ProfileViewController.swift in Sources */,
 				4AA394BD2CBBF60C00D86FB3 /* LoginViewController.swift in Sources */,
 				4AA3947A2CBBF03700D86FB3 /* SceneDelegate.swift in Sources */,
 			);
@@ -332,6 +381,9 @@
 				4AA394CE2CBC1BC900D86FB3 /* LoginViewModelTests.swift in Sources */,
 				4AA394C22CBC0DE700D86FB3 /* MockMasterCoordinator.swift in Sources */,
 				4AA394C52CBC0E0B00D86FB3 /* SceneDelegateTests.swift in Sources */,
+				4AA394F32CBC36CF00D86FB3 /* MockProfileViewModel.swift in Sources */,
+				4AA394F12CBC359100D86FB3 /* ProfileViewControllerTests.swift in Sources */,
+				4AA394ED2CBC34E700D86FB3 /* ProfileViewModelTests.swift in Sources */,
 				4AA394C72CBC0E2200D86FB3 /* MasterCoordinatorTests.swift in Sources */,
 				4AA394D12CBC1D3F00D86FB3 /* MockLoginViewModel.swift in Sources */,
 			);

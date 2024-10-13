@@ -13,6 +13,17 @@ final class LoginViewControllerTests: XCTestCase {
     let mockVM = MockLoginViewModel()
     let mockCoordinator = MockMasterCoordinator()
     
+    func testLoadView() {
+        // Given
+        let sut = LoginViewController(viewModel: mockVM,
+                                      coordinator: mockCoordinator)
+        // When
+        sut.loadView()
+        
+        // Then
+        XCTAssert(sut.view == sut.rootView)
+    }
+    
     func testEditUsername() {
         // Given
         let sut = LoginViewController(viewModel: mockVM,
@@ -51,5 +62,28 @@ final class LoginViewControllerTests: XCTestCase {
         
         // Then
         XCTAssertTrue(sut.rootView.loginButton.isEnabled)
+    }
+    
+    func testDidTapLogin() {
+        // Given
+        let sut = LoginViewController(viewModel: mockVM,
+                                      coordinator: mockCoordinator)
+        // When
+        sut.didTapLogin()
+        
+        // Then
+        XCTAssertTrue(mockVM.loginCalled)
+    }
+    
+    func testLoginSuccess() {
+        // Given
+        let sut = LoginViewController(viewModel: mockVM,
+                                      coordinator: mockCoordinator)
+        // When
+        sut.viewDidLoad()
+        mockVM.loginSubject.send()
+        
+        // Then
+        XCTAssertTrue(mockCoordinator.pushMasterCalled)
     }
 }
