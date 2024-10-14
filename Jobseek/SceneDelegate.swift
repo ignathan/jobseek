@@ -29,6 +29,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appearance.standardAppearance = customAppearance
         appearance.compactScrollEdgeAppearance = customAppearance
         
+        let customTabAppearance = customTabBarAppearance()
+        
+        let tabAppearance = UITabBar.appearance()
+        tabAppearance.standardAppearance = customTabAppearance
+        tabAppearance.scrollEdgeAppearance = customTabAppearance
+        
         guard let windowScene = scene as? UIWindowScene else { return }
         
         let window = UIWindow(windowScene: windowScene)
@@ -76,6 +82,14 @@ extension SceneDelegate {
         customNavBarAppearance.doneButtonAppearance = barButtonItemAppearance
         
         return customNavBarAppearance
+    }
+    
+    func customTabBarAppearance() -> UITabBarAppearance {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        
+        return appearance
     }
     
     func setup() {

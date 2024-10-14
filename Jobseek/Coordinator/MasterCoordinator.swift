@@ -41,6 +41,13 @@ class MasterCoordinatorImpl: MasterCoordinator {
     
     func masterControllers() -> [UIViewController] {
         
+        let jobListVM = JobListViewModelImpl()
+        let jobListController = JobListViewController(viewModel: jobListVM, coordinator: self)
+        let jobListItem = UITabBarItem(title: "master_tab_jobs".localized(),
+                                       image: UIImage(systemName: "house.circle"),
+                                       selectedImage: UIImage(systemName: "house.circle.fill"))
+        jobListController.tabBarItem = jobListItem
+        
         let profileVM = ProfileViewModelImpl()
         let profileController = ProfileViewController(viewModel: profileVM, coordinator: self)
         let profileItem = UITabBarItem(title: "master_tab_profile".localized(),
@@ -48,7 +55,7 @@ class MasterCoordinatorImpl: MasterCoordinator {
                                        selectedImage: UIImage(systemName: "person.crop.circle.fill"))
         profileController.tabBarItem = profileItem
         
-        return [profileController]
+        return [jobListController, profileController]
     }
     
     func pushMaster() {

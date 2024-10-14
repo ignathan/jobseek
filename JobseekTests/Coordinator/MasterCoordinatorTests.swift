@@ -36,6 +36,7 @@ final class MasterCoordinatorTests: XCTestCase {
         let controllers = sut.masterControllers()
         
         // Then
+        XCTAssertTrue(controllers.contains(where: { $0 is JobListViewController }))
         XCTAssertTrue(controllers.contains(where: { $0 is ProfileViewController }))
     }
     
