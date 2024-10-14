@@ -13,6 +13,7 @@ class MockMasterCoordinator: MasterCoordinator {
     var startCalled = false
     var pushMasterCalled = false
     var restartCalled = false
+    var pushJobDetailsCalled = false
     
     func start() {
         startCalled = true
@@ -28,5 +29,9 @@ class MockMasterCoordinator: MasterCoordinator {
     
     func restart() {
         restartCalled = true
+    }
+    
+    func pushJobDetails(id: String) {
+        pushJobDetailsCalled = true
     }
 }

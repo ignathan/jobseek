@@ -68,4 +68,17 @@ final class MasterCoordinatorTests: XCTestCase {
         
         XCTAssertTrue(sut.navigationController.viewControllers.contains(where: { $0 is LoginViewController }))
     }
+    
+    func testPushJobDetails() {
+        // Given
+        let navigationController = UINavigationController()
+        
+        let sut = MasterCoordinatorImpl(navigationController: navigationController)
+        
+        // When
+        sut.pushJobDetails(id: "")
+        
+        // Then
+        XCTAssertTrue(sut.navigationController.viewControllers.last is JobDetailsViewController)
+    }
 }

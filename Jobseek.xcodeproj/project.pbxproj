@@ -51,6 +51,12 @@
 		4AA395192CBD0A2800D86FB3 /* MockJobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA395182CBD0A2800D86FB3 /* MockJobListViewModel.swift */; };
 		4AA3951C2CBD0B4E00D86FB3 /* MockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3951B2CBD0B4E00D86FB3 /* MockTableView.swift */; };
 		4AA3951E2CBD0BC300D86FB3 /* MockRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3951D2CBD0BC300D86FB3 /* MockRefreshControl.swift */; };
+		4AA3952A2CBD29D600D86FB3 /* JobDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA395292CBD29D600D86FB3 /* JobDetailsView.swift */; };
+		4AA3952C2CBD2C8E00D86FB3 /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3952B2CBD2C8E00D86FB3 /* JobDetailsViewController.swift */; };
+		4AA3952E2CBD2C9800D86FB3 /* JobDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3952D2CBD2C9800D86FB3 /* JobDetailsViewModel.swift */; };
+		4AA395312CBD357D00D86FB3 /* JobDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA395302CBD357D00D86FB3 /* JobDetailsViewModelTests.swift */; };
+		4AA395332CBD383300D86FB3 /* JobDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA395322CBD383300D86FB3 /* JobDetailsViewControllerTests.swift */; };
+		4AA395352CBD385C00D86FB3 /* MockJobDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA395342CBD385C00D86FB3 /* MockJobDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +117,12 @@
 		4AA395182CBD0A2800D86FB3 /* MockJobListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJobListViewModel.swift; sourceTree = "<group>"; };
 		4AA3951B2CBD0B4E00D86FB3 /* MockTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableView.swift; sourceTree = "<group>"; };
 		4AA3951D2CBD0BC300D86FB3 /* MockRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRefreshControl.swift; sourceTree = "<group>"; };
+		4AA395292CBD29D600D86FB3 /* JobDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsView.swift; sourceTree = "<group>"; };
+		4AA3952B2CBD2C8E00D86FB3 /* JobDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
+		4AA3952D2CBD2C9800D86FB3 /* JobDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewModel.swift; sourceTree = "<group>"; };
+		4AA395302CBD357D00D86FB3 /* JobDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		4AA395322CBD383300D86FB3 /* JobDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		4AA395342CBD385C00D86FB3 /* MockJobDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJobDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +214,7 @@
 		4AA394AE2CBBF4C100D86FB3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4AA395282CBD29B500D86FB3 /* Job Details */,
 				4AA394F42CBCE7C700D86FB3 /* Job List */,
 				4AA394DB2CBC22E100D86FB3 /* Profile */,
 				4AA394AF2CBBF4C800D86FB3 /* Login */,
@@ -251,6 +264,7 @@
 		4AA394CB2CBC1BA800D86FB3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4AA3952F2CBD356800D86FB3 /* Job Details */,
 				4AA3950C2CBD06BA00D86FB3 /* Job List */,
 				4AA394E72CBC2F7700D86FB3 /* Profile */,
 				4AA394E62CBC2F6F00D86FB3 /* Login */,
@@ -264,6 +278,7 @@
 				4AA394D02CBC1D3F00D86FB3 /* MockLoginViewModel.swift */,
 				4AA394F22CBC36CF00D86FB3 /* MockProfileViewModel.swift */,
 				4AA395182CBD0A2800D86FB3 /* MockJobListViewModel.swift */,
+				4AA395342CBD385C00D86FB3 /* MockJobDetailsViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -358,6 +373,25 @@
 				4AA3951D2CBD0BC300D86FB3 /* MockRefreshControl.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4AA395282CBD29B500D86FB3 /* Job Details */ = {
+			isa = PBXGroup;
+			children = (
+				4AA395292CBD29D600D86FB3 /* JobDetailsView.swift */,
+				4AA3952B2CBD2C8E00D86FB3 /* JobDetailsViewController.swift */,
+				4AA3952D2CBD2C9800D86FB3 /* JobDetailsViewModel.swift */,
+			);
+			path = "Job Details";
+			sourceTree = "<group>";
+		};
+		4AA3952F2CBD356800D86FB3 /* Job Details */ = {
+			isa = PBXGroup;
+			children = (
+				4AA395302CBD357D00D86FB3 /* JobDetailsViewModelTests.swift */,
+				4AA395322CBD383300D86FB3 /* JobDetailsViewControllerTests.swift */,
+			);
+			path = "Job Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +509,8 @@
 				4AA394FD2CBCEC5500D86FB3 /* JobListTVCModel.swift in Sources */,
 				4AA394AA2CBBF2FC00D86FB3 /* UIFont+Extension.swift in Sources */,
 				4AA394E12CBC240D00D86FB3 /* ProfileViewModel.swift in Sources */,
+				4AA3952E2CBD2C9800D86FB3 /* JobDetailsViewModel.swift in Sources */,
+				4AA3952C2CBD2C8E00D86FB3 /* JobDetailsViewController.swift in Sources */,
 				4AA395012CBCEDC900D86FB3 /* JSLabel.swift in Sources */,
 				4AA394B92CBBF5D000D86FB3 /* JSSecondaryButton.swift in Sources */,
 				4AA395092CBCF69800D86FB3 /* JobResponse.swift in Sources */,
@@ -483,6 +519,7 @@
 				4AA394B32CBBF4E100D86FB3 /* String+Extension.swift in Sources */,
 				4AA394FF2CBCED7400D86FB3 /* JobListTVC.swift in Sources */,
 				4AA395042CBCF2DD00D86FB3 /* MasterRepository.swift in Sources */,
+				4AA3952A2CBD29D600D86FB3 /* JobDetailsView.swift in Sources */,
 				4AA394DF2CBC23AE00D86FB3 /* ProfileViewController.swift in Sources */,
 				4AA394BD2CBBF60C00D86FB3 /* LoginViewController.swift in Sources */,
 				4AA394F62CBCE7DA00D86FB3 /* JobListView.swift in Sources */,
@@ -500,10 +537,13 @@
 				4AA394CE2CBC1BC900D86FB3 /* LoginViewModelTests.swift in Sources */,
 				4AA395172CBD09F600D86FB3 /* JobListViewControllerTests.swift in Sources */,
 				4AA395132CBD074200D86FB3 /* MockJobRepository.swift in Sources */,
+				4AA395312CBD357D00D86FB3 /* JobDetailsViewModelTests.swift in Sources */,
 				4AA394C22CBC0DE700D86FB3 /* MockMasterCoordinator.swift in Sources */,
+				4AA395352CBD385C00D86FB3 /* MockJobDetailsViewModel.swift in Sources */,
 				4AA394C52CBC0E0B00D86FB3 /* SceneDelegateTests.swift in Sources */,
 				4AA394F32CBC36CF00D86FB3 /* MockProfileViewModel.swift in Sources */,
 				4AA394F12CBC359100D86FB3 /* ProfileViewControllerTests.swift in Sources */,
+				4AA395332CBD383300D86FB3 /* JobDetailsViewControllerTests.swift in Sources */,
 				4AA394ED2CBC34E700D86FB3 /* ProfileViewModelTests.swift in Sources */,
 				4AA394C72CBC0E2200D86FB3 /* MasterCoordinatorTests.swift in Sources */,
 				4AA395152CBD08D400D86FB3 /* MockError.swift in Sources */,

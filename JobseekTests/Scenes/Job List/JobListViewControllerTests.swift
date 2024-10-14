@@ -87,4 +87,17 @@ final class JobListViewControllerTests: XCTestCase {
         // Then
         XCTAssertEqual(cell.titleLabel.text, mockVM.mockModel.positionTitle)
     }
+    
+    func testDidSelect() {
+        // Given
+        let sut = JobListViewController(viewModel: mockVM,
+                                        coordinator: mockCoordinator)
+        
+        // When
+        sut.tableView(sut.rootView.jobTableView,
+                      didSelectRowAt: IndexPath(item: 0, section: 0))
+        
+        // Then
+        XCTAssertTrue(mockCoordinator.pushJobDetailsCalled)
+    }
 }

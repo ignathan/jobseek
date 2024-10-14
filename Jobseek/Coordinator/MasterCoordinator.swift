@@ -16,6 +16,8 @@ protocol MasterCoordinator {
     func pushMaster()
     
     func restart()
+    
+    func pushJobDetails(id: String)
 }
 
 class MasterCoordinatorImpl: MasterCoordinator {
@@ -67,5 +69,13 @@ class MasterCoordinatorImpl: MasterCoordinator {
     
     func restart() {
         start(animated: true)
+    }
+    
+    func pushJobDetails(id: String) {
+        
+        let detailsVM = JobDetailsViewModelImpl(jobId: id)
+        let detailsController = JobDetailsViewController(viewModel: detailsVM, coordinator: self)
+        
+        navigationController.pushViewController(detailsController, animated: true)
     }
 }

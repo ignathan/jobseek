@@ -42,4 +42,12 @@ class MockJobRepository: JobRepository {
             return Fail(error: MockError.resultError).eraseToAnyPublisher()
         }
     }
+    
+    func getJobDetails(id: String) -> AnyPublisher<Job, any Error> {
+        if success {
+            return Just(job).setFailureType(to: Error.self).eraseToAnyPublisher()
+        } else {
+            return Fail(error: MockError.resultError).eraseToAnyPublisher()
+        }
+    }
 }

@@ -110,4 +110,13 @@ extension JobListViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return .init(frame: .zero)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let items = viewModel.itemsSubject.value
+        
+        guard indexPath.row < items.count else { return }
+        
+        coordinator.pushJobDetails(id: items[indexPath.row].id)
+    }
 }
